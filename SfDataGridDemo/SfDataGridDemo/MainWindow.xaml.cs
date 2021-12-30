@@ -31,7 +31,7 @@ namespace SfDataGridDemo
 
         private void OnFilterChanged(object sender, Syncfusion.UI.Xaml.DataGrid.GridFilterEventArgs e)
         {
-            var filteredResult = this.dataGrid.View.Records.Select(recordentry => recordentry.Data);
+            var filteredResult = this.dataGrid.View.Records.Select(recordEntry => recordEntry.Data);
         }
     }
 }

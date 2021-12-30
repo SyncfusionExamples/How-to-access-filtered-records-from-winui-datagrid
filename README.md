@@ -12,12 +12,12 @@ this.dataGrid.FilterChanged += OnFilterChanged;
 
 private void OnFilterChanged(object sender, Syncfusion.UI.Xaml.DataGrid.GridFilterEventArgs e)
 {
-     var filteredResult = this.dataGrid.View.Records.Select(recordentry => recordentry.Data);
+     var filteredResult = this.dataGrid.View.Records.Select(recordEntry => recordEntry.Data);
 }
 
 ```
 
-The records in SfDataGrid.View.Records are of type [RecordEntry](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Data.RecordEntry.html) that contain the underlying data. Thus by taking the [recordentry.Data](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Data.RecordEntry.html#Syncfusion_UI_Xaml_Data_RecordEntry_Data), the filtered records can be accessed in the underlying type.
+The records in SfDataGrid.View.Records are of type [RecordEntry](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Data.RecordEntry.html) that contain the underlying data. Thus by taking the [RecordEntry.Data](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Data.RecordEntry.html#Syncfusion_UI_Xaml_Data_RecordEntry_Data), the filtered records can be accessed in the underlying type.
 
 Take a moment to peruse the [WinUI DataGrid - Filtering](https://help.syncfusion.com/winui/datagrid/filtering) documentation, where you can find about filtering with code examples.
 
